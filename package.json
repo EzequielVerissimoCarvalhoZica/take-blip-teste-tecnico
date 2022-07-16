@@ -1,0 +1,34 @@
+{
+  "name": "take-blip",
+  "version": "1.0.0",
+  "description": "Template repository to hold linter configurations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "nodemon ./challenge/Api/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EzequielVerissimoCarvalhoZica/take-blip.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EzequielVerissimoCarvalhoZica/take-blip/issues"
+  },
+  "homepage": "https://github.com/EzequielVerissimoCarvalhoZica/take-blip#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "nodemon": "^2.0.19",
+    "eslint-config-trybe-backend": "1.0.3"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-plugin-import": "2.22.1"
+  }
+}
