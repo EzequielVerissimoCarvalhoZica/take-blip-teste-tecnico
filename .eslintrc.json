@@ -4,17 +4,10 @@
         "es2021": true,
         "node": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
-    "parser": "@typescript-eslint/parser",
+    "extends": ["trybe-backend"],
     "parserOptions": {
         "ecmaVersion": "latest"
     },
-    "plugins": [
-        "@typescript-eslint"
-    ],
     "rules": {
     }
 }
