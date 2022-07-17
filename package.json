@@ -26,8 +26,10 @@
     "nodemon": "^2.0.19"
   },
   "devDependencies": {
+    "chai": "^4.3.6",
     "dotenv": "^16.0.1",
     "eslint": "^8.20.0",
-    "eslint-config-trybe-backend": "^1.0.4"
+    "eslint-config-trybe-backend": "^1.0.4",
+    "mocha": "^10.0.0"
   }
 }
