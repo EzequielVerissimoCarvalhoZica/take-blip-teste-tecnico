@@ -1,21 +1,21 @@
 const axiosRequest = require('../helper/axios');
 const refactor = require('../helper/refactor');
-const order = require('../helper/order');
+const filterByLanguage = require('../helper/filterByLanguage');
 
-const getAll = async () => {
-  const response = await axiosRequest.getAllRepos('https://api.github.com/orgs/takenet/repos');
+const findOldest = async (company) => {
+  const response = await axiosRequest.getAllRepos(company);
+  
+  if (typeof response !== 'object') return { message: response, code: 500 };
 
-  const projectsInCSharpLanguage = response
-    .filter((project) => project.language === 'C#')
-    .sort((a, b) => order(a.created_at, b.created_at));
+  const projectsInCSharpLanguage = filterByLanguage(response, 'C#');
 
   const fiveOldestRepositories = projectsInCSharpLanguage.slice(0, 5);
 
   const refactoredRepos = refactor(fiveOldestRepositories);
 
-  return refactoredRepos;
+  return { message: refactoredRepos, code: 200 };
 };
 
 module.exports = {
-  getAll,
+  findOldest,
 };
