@@ -1,5 +1,3 @@
-
-// const { default: axios } = require('axios');
 const axios = require('axios');
 const { expect } = require('chai');
 const sinon = require('sinon');
