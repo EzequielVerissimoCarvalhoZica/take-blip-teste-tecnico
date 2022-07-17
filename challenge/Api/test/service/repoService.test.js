@@ -3,7 +3,7 @@ const sinon = require('sinon');
 const axiosRequest = require('../../helper/axios');
 const repoService = require('../../service/repoService')
 const { data } = require('../Mock/apiGitHubRes');
-const cSharpReposFiltered = require('../Mock/cSharpReposFiltered');
+const cSharpReposFiltered = require('../Mock/fiveCSharpReposFiltered');
 
 describe('Testa o arquivo repoService na função:', () => {
   describe('findOldest', () => {
