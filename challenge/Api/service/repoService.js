@@ -11,9 +11,9 @@ const getAll = async () => {
 
   const fiveOldestRepositories = projectsInCSharpLanguage.slice(0, 5);
 
-  const newObj = refactor(fiveOldestRepositories);
+  const refactoredRepos = refactor(fiveOldestRepositories);
 
-  return newObj;
+  return refactoredRepos;
 };
 
 module.exports = {
